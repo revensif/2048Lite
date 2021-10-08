@@ -19,15 +19,16 @@ public class Main extends Application {
         Scene scene = new Scene(root, 600, 625);
         //Делаем фокус на сцене, для того чтобы она захватывала нажатия кнопок
         scene.getRoot().requestFocus();
+        //Ставим название нашей игры
         primaryStage.setTitle("2048 Lite");
-        primaryStage.getIcons().add(new Image("/sample/Pictures/logo.png"));
+        //Меняем иконку у нашей игры
+        primaryStage.getIcons().add(new Image("/sample/pictures/logo.png"));
+        //Ставим возможность изменения размера окна на false
         primaryStage.setResizable(false);
+        //Ставим и запускаем наше окно
         primaryStage.setScene(scene);
-
-        //Показываем основное окно
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
