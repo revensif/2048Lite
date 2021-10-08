@@ -119,7 +119,7 @@ public class Controller implements Initializable {
         if (!gameContext.createCellAt(
                 random.nextInt(FIELD_SIZE),
                 random.nextInt(FIELD_SIZE),
-                Math.random() < 0.90 ? 512 : 512)
+                Math.random() < 0.90 ? CELL_TWO : CELL_FOUR)
         )
             createCell();
     }
