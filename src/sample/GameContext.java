@@ -219,6 +219,8 @@ public class GameContext {
     public int[][] getPlayingField() {
         int[][] res = new int[FIELD_SIZE][FIELD_SIZE];
         for (int i = 0; i < FIELD_SIZE; i++) {
+            //arraycopy: 1) Откуда берём значение, 2) С какой позиции начинаем брать значения, 3) Куда записываем значение
+            //4) С какой позиции начинаем записывать значения, 5) Количество копируемых элементов
             System.arraycopy(playingField[i], 0, res[i], 0, FIELD_SIZE);
         }
         return res;
